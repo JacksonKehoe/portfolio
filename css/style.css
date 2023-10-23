@@ -50,6 +50,10 @@ section {
     padding: 5em 2em;
 }
 
+.centered {
+    text-align: center;
+}
+
 img { 
     display: block;
     max-width: 100%;
@@ -391,7 +395,6 @@ h3 { font-size: var(--fs-h3)}
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
-    object-fit: cover;
     height: 100%;
     width: 100%;
 }
