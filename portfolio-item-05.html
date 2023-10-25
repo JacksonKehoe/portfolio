@@ -54,29 +54,35 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                The title<strong>of my Project</strong>
+                Qualitative Feedback Tool for<strong>Engineering Reports</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro"> A short subtitle</p>
-            <img src="img/headshot.jpg" alt="headshot" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro"> Using LLMs</p>
+            <img src="img/capstone-graph.jpg" alt="capstone" class="intro__img">
         </section>
 
         <div class="portfolio-item-individual">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <img src="img/headshot.jpg" alt="headshot">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>In my capstone project, my team collaborated with a professor and a Ph.D. student to develop a tool designed to offer feedback to first-year 
+                engineering students on their reports before submitting them for grading. Our objective was to create a tool that could also 
+                be used by instructors to track student submissions and pinpoint weaknesses in the reports. In essence, 
+                our project's core idea revolved around utilizing large language models trained on pre-existing engineering reports. 
+                We aimed to determine whether these reports contained adequate information and essential elements. Subsequently, our tool would generate feedback 
+                through an interactive plot, illustrating how these various elements should be interconnected and whether the students had effectively 
+                addressed each element in their reports.</p>
+            <img src="img/capstone-stock-image.jpg" alt="headshot" width="100%">
+            <p>In the project's backend, we began by segmenting different sections of the reports. Each section of the report was expected to contain specific elements, 
+                and the clustering process aimed to match individual sentences with the appropriate elements. Afterward, each 
+                sentence was transformed into a vector and assigned a relevant label. Additionally, we stored previous engineering reports in 
+                vectorized form to be used alongside a Large Language Model (LLM). To assess the quality of the input reports, we compared them to the stored reports. This comparison involved calculating the cosine similarity score, which determined how closely the input report resembled previously recognized high-quality engineering reports. We established a threshold value to distinguish between sections of the report that met the quality criteria and those that required improvement. This process allowed for the automated evaluation of student reports and the provision of targeted feedback.</p>
+            <p>
+                In the front end of the project, Django was employed to enable the execution of Python code through functions. 
+                The user interface was designed with a login option, differentiating between instructors and students, and 
+                assigning appropriate permissions for each user category. The system was connected to an SQL database, which 
+                stored a repository of all the past reports, submissions, and their associated scores. For students, 
+                the interface allowed them to upload their entire reports either in document form or by copying and pasting the text. 
+                Upon submission, students were presented with a graphical representation of their report, with each node on the graph 
+                providing feedback regarding its quality, indicating whether it met the required standards or needed improvement. The system 
+                stored the submissions, enabling instructors to access each student's submissions and review the feedback provided. 
+                This feature facilitated the identification of potential misunderstandings or areas of improvement within the class.</p>
         </div>
 
         
